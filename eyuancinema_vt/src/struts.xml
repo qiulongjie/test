@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 指定Web应用的默认编码集,相当于调用HttpServletRequest的setCharacterEncoding方法 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 该属性指定需要Struts 2处理的请求后缀，该属性的默认值是action，即所有匹配*.action的请求都由Struts2处理。 
+		如果用户需要指定多个请求后缀，则多个后缀之间以英文逗号（,）隔开。 -->
+	<!-- <constant name="struts.action.extension" value="do,action," /> -->
+	<!-- 设置浏览器是否缓存静态内容,默认值为true(生产环境下使用),开发阶段最好关闭 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 当struts的配置文件修改后,系统是否自动重新加载该文件,默认值为false(生产环境下使用),开发阶段最好打开 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 默认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+
+	<constant name="struts.objectFactory" value="spring" />
+
+
+	<package name="login" extends="struts-default" namespace="/">
+
+		<action name="backStageLogin_*" class="com.eyuan.action.BackStageLoginAction"
+			method="{1}">
+			<result name="managerLogin" type="redirect">/jsp/backstage/manager.jsp
+			</result>
+			<result name="sellerLogin">/jsp/backstage/seller.jsp</result>
+			<result name="out">/jsp/login.jsp</result>
+			<result name="errorLogin">../jsp/login.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="movieInfo" extends="struts-default" namespace="/">
+
+		<action name="addMovieInfo_*" class="com.eyuan.action.AddMovieInfoAction"
+			method="{1}">
+			<result name="addui">/jsp/backstage/addMovieInfo.jsp
+			</result>
+			<result name="success" type="redirect">/showMovieInfoList_pageList
+			</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+
+		<action name="showMovieInfoList_*" class="com.eyuan.action.ShowMovieInfoListAction"
+			method="{1}">
+			<result name="movieInfofore">/jsp/forestage/filminstruction.jsp</result>
+			<result name="forestagepage">/jsp/forestage/newfilms.asp.jsp</result>
+			<result name="pagesuccess">/jsp/backstage/movieInfoList.jsp</result>
+			<result name="success">/jsp/backstage/movieInfoList.jsp</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+
+		<action name="updateMovieInfo_*" class="com.eyuan.action.UpdateMovieInfoAction"
+			method="{1}">
+			<result name="updatesuccess" type="redirect">/showMovieInfoList_pageList
+			</result>
+			<result name="uisuccess">/jsp/backstage/updateMovieInfo.jsp</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+
+		<action name="deleteMovieInfo" class="com.eyuan.action.DeleteMovieInfoAction"
+			method="deleteMovieInfo">
+			<result name="success" type="redirect">/showMovieInfoList_pageList
+			</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+	</package>
+
+	<package name="movieShowInfo" extends="struts-default"
+		namespace="/">
+
+		<action name="movieShowInfo_*" class="com.eyuan.action.MovieShowInfoAction"
+			method="{1}">
+			<result name="todayshow">/jsp/forestage/todayShow.jsp</result>
+			<result name="tomarrowshow">/jsp/forestage/todayShow.jsp</result>
+			<result name="aftershow">/jsp/forestage/todayShow.jsp</result>
+			<result name="showseatsuccess">/jsp/forestage/buy.jsp</result>
+			<result name="showalldateforestage">/jsp/forestage/articleshow.jsp</result>
+			<result name="showforestage">/jsp/forestage/thisMovieShow.jsp</result>
+			<result name="addsuccess" type="redirect">/movieShowInfo_movieShowInfoList
+			</result>
+			<result name="deletesuccess" type="redirect">/movieShowInfo_movieShowInfoList
+			</result>
+			<result name="updatesuccess" type="redirect">/movieShowInfo_movieShowInfoList
+			</result>
+			<result name="showsuccess">/jsp/backstage/showSeat.jsp</result>
+			<result name="addUI">/jsp/backstage/addMovieShowInfo.jsp</result>
+			<result name="updateUI">/jsp/backstage/updateMovieShowInfo.jsp</result>
+			<result name="listsuccess">/jsp/backstage/movieShowInfoList.jsp</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="superUserInfo" extends="struts-default"
+		namespace="/">
+
+		<interceptors>
+			<interceptor name="boss"
+				class="com.eyuan.actionInterceptor.BossInterceptor"></interceptor>
+			<interceptor-stack name="bossStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="boss"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="superUserInfo_*" class="com.eyuan.action.SuperUserInfoAction"
+			method="{1}">
+			<result name="notBoss">/jsp/backstage/managerInvocation.jsp</result>
+			<result name="addsuccess" type="redirect">/superUserInfo_superUserInfoList
+			</result>
+			<result name="deletesuccess" type="redirect">/superUserInfo_superUserInfoList
+			</result>
+			<result name="updatesuccess" type="redirect">/superUserInfo_superUserInfoList
+			</result>
+			<result name="addUI">/jsp/backstage/addSuperUserInfo.jsp</result>
+			<result name="updateUI">/jsp/backstage/updateSuperUserInfo.jsp</result>
+			<result name="listsuccess">/jsp/backstage/superUserInfoList.jsp</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+
+			<interceptor-ref name="bossStack"></interceptor-ref>
+		</action>
+
+	</package>
+
+	<package name="sellerInfo" extends="struts-default" namespace="/">
+
+		<action name="sellerInfo_*" class="com.eyuan.action.SellerInfoAction"
+			method="{1}">
+			<result name="addsuccess" type="redirect">/sellerInfo_sellerInfoList
+			</result>
+			<result name="deletesuccess" type="redirect">/sellerInfo_sellerInfoList
+			</result>
+			<result name="updatesuccess" type="redirect">/sellerInfo_sellerInfoList
+			</result>
+			<result name="addUI">/jsp/backstage/addSellerInfo.jsp</result>
+			<result name="updateUI">/jsp/backstage/updateSellerInfo.jsp</result>
+			<result name="listsuccess">/jsp/backstage/sellerInfoList.jsp</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="userInfo" extends="struts-default" namespace="/">
+
+		<action name="userInfo_*" class="com.eyuan.action.UserInfoAction"
+			method="{1}">
+			<result name="addsuccess" type="redirect">/userInfo_userInfoList</result>
+			<result name="deletesuccess" type="redirect">/userInfo_userInfoList
+			</result>
+			<result name="updatesuccess" type="redirect">/userInfo_userInfoList
+			</result>
+			<result name="addUI">/jsp/backstage/addUserInfo.jsp</result>
+			<result name="updateUI">/jsp/backstage/updateUserInfo.jsp</result>
+			<result name="listsuccess">/jsp/backstage/userInfoList.jsp</result>
+			<result name="error">/jsp/backstage/error.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="buyTicket" extends="struts-default" namespace="/">
+
+		<action name="buyTicket_*" class="com.eyuan.action.BuyTicketAction"
+			method="{1}">
+			<result name="paysuccess">/jsp/forestage/paySuccess.jsp</result>
+			<result name="payfalse">/jsp/forestage/payFalse.jsp</result>
+			<result name="paying">/jsp/forestage/payingTicket.jsp</result>
+			<result name="payquit">/jsp/forestage/eyuancinema.jsp</result>
+		</action>
+
+		<action name="ticket_*" class="com.eyuan.action.TicketAction"
+			method="{1}">
+			<result name="serchui">/jsp/backstage/serchTicket.jsp</result>
+			<result name="phonefindsuccess">/jsp/backstage/findTicketList.jsp</result>
+			<result name="idfindsuccess">/jsp/backstage/idfindTicketList.jsp</result>
+			<result name="allphonefindsuccess">/jsp/backstage/ticketList.jsp</result>
+			<result name="outsuccess" type="redirect">/ticket_allPhoneTicket</result>
+			<result name="deletesuccess" type="redirect">/ticket_allPhoneTicket
+			</result>
+			<result name="pserchoutsuccess">/jsp/backstage/findTicketList.jsp</result>
+			<result name="pserchdeletesuccess">/jsp/backstage/findTicketList.jsp
+			</result>
+			<result name="iserchoutsuccess">/jsp/backstage/idfindTicketList.jsp</result>
+			<result name="iserchdeletesuccess" type="redirect">/ticket_serchUI
+			</result>
+		</action>
+	</package>
+
+</struts>    

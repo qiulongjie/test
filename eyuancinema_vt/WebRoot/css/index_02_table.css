@@ -1,0 +1,684 @@
+body {
+	font-size:12px;
+	color:#4B2B12;
+	
+	background-position:center top;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	background-image: url(../image/homebj.jpg);
+
+    
+}
+td,th{
+font-size:12px;
+}
+a{
+	color:#4B2B12;
+	text-decoration:none;
+
+}
+.divbig{
+
+	background-repeat:repeat-x;
+	background-image: url(../image/homebj.jpg);
+
+
+}
+
+
+
+.newfilmul{
+	list-style-type:none;
+	margin:0px;
+	padding:2px 2px 2px 5px;
+}
+.bookingbj{
+	background-image:url("buttonbj1.jpg"/*tpa=http://www.sddyy.cn/images/01/buttonbj1.jpg*/);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#CCCCCC;
+	padding-left:30px;
+}
+.bookingbj a{
+	color:#CCCCCC;
+	text-decoration:none;
+}
+.bookingbj1{
+	background-image:url("buttonbj2.jpg"/*tpa=http://www.sddyy.cn/images/01/buttonbj2.jpg*/);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	padding-left:30px;
+}
+.bookingbj1 a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.filmshow1{
+	background-image:url("filmshowbj.jpg"/*tpa=http://www.sddyy.cn/images/01/filmshowbj.jpg*/);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+}
+.filmshow1 a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.filmshow2{
+	background-image:url("filmshowbj1.jpg"/*tpa=http://www.sddyy.cn/images/01/filmshowbj1.jpg*/);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+}
+.filmshow2 a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.filmshowfont1{
+	color:#4E2801;
+	font-size:14px;
+	font-weight:bold;
+}
+.filmshowbj1{
+	background-color:#6A4C30;
+}
+.redfont{
+	color:#940C00;
+}
+.filmshowbj2{
+	background-color:#6A4C30;
+}
+.filmshowbj3{
+	background-color:#6A4C30;
+}
+.filmshowul{
+	list-style-type:none;
+	padding-left:0px;
+	padding-top:0px;
+	margin:0px;
+	line-height:16px;
+}
+.filmshowul a{
+	text-decoration:none;
+}
+.filmshowul a:hover{
+	text-decoration: underline;
+}
+.bluefont{
+	color:#4E2801;
+}
+.rightline{
+	border-right-color:#C8C8C8;
+	border-right-width:2px;
+}
+.bottomul{
+	list-style-type:none;
+	margin:0px;
+	padding:8px 0px 0px 22px;
+	line-height:16px;
+}
+
+#bottomleft #bottomcenter #bottomright{
+float:left;
+}
+#bottomleft #bottomright{
+ width:207px;
+ height:265px;
+}
+#bottomcenter{
+width:1000px;
+height:265px;
+}
+.loginfont{
+font-size:14px;
+color:#2B1A0A;
+}
+
+
+/*次级页面css*/
+.bookingbj2{
+	background-image:url("buttonbj1_1.jpg"/*tpa=http://www.sddyy.cn/images/01/buttonbj1_1.jpg*/);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#ffffff;
+	padding-left:30px;
+}
+.bookingbj2 a{
+	color:#333;
+	text-decoration:none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bookingbj3{
+	background-image:url("buttonbj2_1.jpg"/*tpa=http://www.sddyy.cn/images/01/buttonbj2_1.jpg*/);
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	padding-left:30px;
+}
+.bookingbj3 a{
+	color:#ffffff;
+	text-decoration:none;
+}
+#insul{
+	color:#4E2801;
+	font-weight:bolder;
+	font-size:15px;
+	line-height:24px;
+	list-style-type:none;
+	vertical-align:bottom;
+	padding-right:20px; 
+	padding-top:20px;
+	padding-left:15px;
+	margin:0px;
+}
+#insul a{
+	color:#4E2801;
+	text-decoration: none;
+}
+.libj{
+	background-image:url("linebj.gif"/*tpa=http://www.sddyy.cn/images/01/linebj.gif*/);
+	background-repeat:repeat-x;
+	height:32px;
+	vertical-align:bottom;
+}
+.fontcolor1{
+	color:#22140B;
+}
+p {
+	line-height: 19px;
+	margin:2px;
+	font-size: 12px;
+	text-align: left;
+	
+}
+.thumbnail{
+    padding:3px 0.2px 1px 3px;
+	float: left;
+	margin-right: 8px;
+	}
+	
+/*contact css*/
+.contactfont{
+color:#000000;
+padding-left:100px;
+font-weight:bold;
+}
+.contactfont a{
+color:#000000;
+font-weight:bold;
+}
+
+/*activity css*/
+.activityfont{
+color:#070005;
+}
+.activityfont a{
+color:#070005;
+}
+.waiwei {
+WIDTH: 252px; POSITION: relative;background-image:url("252_167.gif"/*tpa=http://www.sddyy.cn/images/252_167.gif*/); background-position:right; background-repeat:no-repeat; border:0px;
+}
+.tupian {
+LEFT: -4px;  POSITION: relative; TOP: -4px; border:0px;
+}
+.tupian img {
+vertical-align:bottom
+}
+.activityul{
+list-style:url("activity_01.jpg"/*tpa=http://www.sddyy.cn/images/01/activity_01.jpg*/);
+list-style-position:inside;
+line-height:30px;
+padding:0px 0px 0px 10px;
+width:660px;
+margin-right:10px;
+}
+.activityli{
+background-image:url("activity_02.gif"/*tpa=http://www.sddyy.cn/images/01/activity_02.gif*/);
+background-position:center;
+background-repeat:repeat-x;
+padding-left:25px;
+width:565px;
+float:left;
+}
+.activityli1{
+background-image:url("activity_02.gif"/*tpa=http://www.sddyy.cn/images/01/activity_02.gif*/);
+background-position:center;
+background-repeat:repeat-x;
+width:65px;
+list-style:none;
+float:left;
+}
+
+
+/*newfilms css*/
+.newfilmsul1{
+list-style:none;
+line-height:20px;
+margin:0px;
+padding:0px;
+}
+
+/*message css*/
+.mestitle{
+color:#4A3A23;
+font-size:14px;
+font-weight:bold;
+}
+.inputcs1{
+width:187px;
+height:28px;
+background-image:url("message_02.jpg"/*tpa=http://www.sddyy.cn/images/01/message_02.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+}
+.inputcs1-1{
+width:180px;
+height:24px;
+background-image:url("message_02.jpg"/*tpa=http://www.sddyy.cn/images/01/message_02.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+font-size:12px;
+}
+.inputcs2{
+width:335px;
+height:208px;
+background-image:url("message_03.jpg"/*tpa=http://www.sddyy.cn/images/01/message_03.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+}
+.inputcs2-1{
+width:330px;
+height:204px;
+background-image:url("message_03.jpg"/*tpa=http://www.sddyy.cn/images/01/message_03.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+font-size:12px;
+padding-top:2px;
+overflow:hidden;
+}
+
+
+/*filmplan css*/
+.planul1{
+list-style:none;
+}
+.planli1{
+list-style:none;
+float:left;
+width:120px;
+text-align:center;
+line-height:22px;
+font-weight:bolder;
+}
+.planli2{
+background-image:url("filmplan_06.jpg"/*tpa=http://www.sddyy.cn/images/01/filmplan_06.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+font-size:13px;
+color:#FDF6F0;
+font-weight:bolder;
+margin-bottom:15px;
+}
+.planli3{
+background-image:url("filmplanbj.gif"/*tpa=http://www.sddyy.cn/images/01/filmplanbj.gif*/);
+background-position:top;
+background-repeat:repeat-x;
+float:left;
+width:120px;
+text-align:center;
+font-weight:bolder;
+height:30px;
+}
+.searchplan{
+background-color:#3D2C1C;
+color:#FFFFFF;
+font-size:13px;
+font-weight:bolder;
+}
+.downlist{
+background-color:#C4BCB9;
+border:0px;
+padding:0px;
+margin:1px;
+}
+
+/*片名select1*/
+#age_sel_1 div.tag_select{display:block;color:#000;width:120px;height:20px;background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) no-repeat 0 0;padding:0 10px;line-height:20px;}
+#age_sel_1 div.tag_select_hover{display:block;color:#000;width:120px;height:20px;background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) no-repeat 0 -20px;padding:0 10px;line-height:20px;}
+#age_sel_1 div.tag_select_open{display:block;color:#000;width:120px;height:20px;background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) no-repeat 0 -41px;padding:0 10px;line-height:20px;}
+
+#age_sel_1 ul.tag_options{position:absolute;margin:0;list-style:none;background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) no-repeat left bottom;padding:0 0 1px;margin:0;width:100px;}
+#age_sel_1 ul.tag_options li{background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) repeat-y -158px 0;display:block;width:120px;padding:0 10px;height:20px;text-decoration:none;line-height:20px;color:#000;}
+
+#age_sel_1 ul.tag_options li.open_hover{background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) no-repeat 0 -79px;color:#000}
+#age_sel_1 ul.tag_options li.open_selected{background:transparent url("selecttitle.gif"/*tpa=http://www.sddyy.cn/images/01/selecttitle.gif*/) no-repeat 0 -60px;color:#19555F}
+/*片名select1--end*/
+
+/*开始时间time_start*/
+#time_start div.tag_select{display:block;color:#000;width:15px;height:20px;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 0;padding:0 10px;line-height:20px;}
+#time_start div.tag_select_hover{display:block;color:#000;width:15px;height:20px;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -20px;padding:0 10px;line-height:20px;}
+#time_start div.tag_select_open{display:block;color:#000;width:15px;height:20px;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -41px;padding:0 10px;line-height:20px;}
+
+#time_start ul.tag_options{position:absolute;margin:0;list-style:none;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat left bottom;padding:0 0 1px;margin:0;width:20px;}
+#time_start ul.tag_options li{background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) repeat-y -158px 0;display:block;width:15px;padding:0 10px;height:20px;text-decoration:none;line-height:20px;color:#000;}
+
+#time_start ul.tag_options li.open_hover{background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -79px;color:#000}
+#time_start ul.tag_options li.open_selected{background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -60px;color:#19555F}
+/*开始时间time_start end*/
+
+/*结束时间time_end*/
+#time_end div.tag_select{display:block;color:#000;width:15px;height:20px;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 0;padding:0 10px;line-height:20px;}
+#time_end div.tag_select_hover{display:block;color:#000;width:15px;height:20px;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -20px;padding:0 10px;line-height:20px;}
+#time_end div.tag_select_open{display:block;color:#000;width:15px;height:20px;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -41px;padding:0 10px;line-height:20px;}
+
+#time_end ul.tag_options{position:absolute;margin:0;list-style:none;background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat left bottom;padding:0 0 1px;margin:0;width:20px;}
+#time_end ul.tag_options li{background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) repeat-y -158px 0;display:block;width:15px;padding:0 10px;height:20px;text-decoration:none;line-height:20px;color:#000;}
+
+#time_end ul.tag_options li.open_hover{background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -79px;color:#000}
+#time_end ul.tag_options li.open_selected{background:transparent url("selecttime.gif"/*tpa=http://www.sddyy.cn/images/01/selecttime.gif*/) no-repeat 0 -60px;color:#19555F}
+/*结束时间time_end end*/
+
+/*版本memo_film*/
+#memo_film div.tag_select{display:block;color:#000;width:49px;height:20px;background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) no-repeat 0 0;padding:0 10px 0px 5px;line-height:20px;}
+#memo_film div.tag_select_hover{display:block;color:#000;width:49px;height:20px;background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) no-repeat 0 -20px;padding:0 10px 0px 5px;line-height:20px;}
+#memo_film div.tag_select_open{display:block;color:#000;width:49px;height:20px;background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) no-repeat 0 -41px;padding:0 10px 0px 5px;line-height:20px;}
+
+#memo_film ul.tag_options{position:absolute;margin:0;list-style:none;background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) no-repeat left bottom;padding:0 0 1px;margin:0;width:20px;}
+#memo_film ul.tag_options li{background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) repeat-y -70px 0;display:block;width:49px;padding:0 10px 0px 5px;height:20px;text-decoration:none;line-height:20px;color:#000;}
+
+#memo_film ul.tag_options li.open_hover{background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) no-repeat 0 -79px;color:#000}
+#memo_film ul.tag_options li.open_selected{background:transparent url("selectmemo.gif"/*tpa=http://www.sddyy.cn/images/01/selectmemo.gif*/) no-repeat 0 -60px;color:#19555F}
+/*版本memo_film end*/
+
+/*register css*/
+.bigfont{
+font-weight:bold;
+font-size:14px;
+color:#170B00;
+}
+.inputcs3{
+width:230px;
+height:24px;
+background-image:url("register_01.jpg"/*tpa=http://www.sddyy.cn/images/01/register_01.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+padding:3px 2px 1px 8px;
+}
+.inputcs3-1{
+width:230px;
+height:24px;
+background-image:url("register_01.jpg"/*tpa=http://www.sddyy.cn/images/01/register_01.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+font-size:12px;
+}
+.inputcs4{
+width:84px;
+height:24px;
+background-image:url("register_04.jpg"/*tpa=http://www.sddyy.cn/images/01/register_04.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+}
+.inputcs4-1{
+width:84px;
+height:24px;
+background-image:url("register_04.jpg"/*tpa=http://www.sddyy.cn/images/01/register_04.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+border:0px;
+
+}
+.font1{
+color:#7D1F05;
+}
+.textcs{
+color:#170B00;
+font-size:12px;
+}
+
+
+
+/*top cs*/
+#Tleft,#Tcenter,#Tright{
+float:left;
+}
+#Tleft{
+width:206px;
+height:371px;
+}
+#Tright{
+width:209px;
+height:371px;
+}
+#Tcenter{
+width:1004px;
+}
+#bigmenu{
+width:1004px;
+height:94px;
+background-image:url("top_03.jpg"/*tpa=http://www.sddyy.cn/images/01/top_03.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+padding:0px;
+margin:0px;
+}
+
+#login{
+width:1000px;
+height:29px;
+background-image:url("top_07.jpg"/*tpa=http://www.sddyy.cn/images/01/top_07.jpg*/);
+background-position:center;
+background-repeat:no-repeat;
+color:#220800;
+font-size:14px;
+font-weight:bolder;
+}
+.topinput{
+width:97px;
+height:17px;
+background-image:url("top_06.gif"/*tpa=http://www.sddyy.cn/images/01/top_06.gif*/);
+background-position:center;
+background-repeat:no-repeat;
+}
+.topinput-1{
+width:85px;
+height:12px;
+background-color:#B8A68E;
+border:0px;
+font-size:12px;
+margin-top:1px;
+margin-bottom:2px;
+}
+
+
+.topbj{
+background-image:url("top_bj.jpg"/*tpa=http://www.sddyy.cn/images/01/top_bj.jpg*/);
+background-position:center;
+}
+
+
+/*articleshow css*/
+.showtitle{
+font-size:14px;
+font-weight:bolder;
+}
+
+
+/*filmdetail css*/
+.waiwei1 {
+position:relative;
+background:#886C45;
+margin:0 auto;
+width:160px;
+height:230px;
+}
+.tupian1 {
+background:#000000;
+padding:0;
+position:relative;
+top:-1px;
+left:-1px;
+}
+.redfontv{
+color:#910704;
+}
+.redfontv a{
+color:#910704;
+text-decoration:none;
+}
+
+
+/*友情链接 css*/
+#demo5 #demo4{
+float:left;
+width:800px;
+}
+
+/*members css*/
+.membersul{
+list-style:url("activity_01.jpg"/*tpa=http://www.sddyy.cn/images/01/activity_01.jpg*/);
+list-style-position:inside;
+line-height:25px;
+padding:0px 0px 0px 10px;
+width:580px;
+margin-right:10px;
+color:#000000;
+}
+.membersli{
+background-image:url("activity_02.gif"/*tpa=http://www.sddyy.cn/images/01/activity_02.gif*/);
+background-position:center;
+background-repeat:repeat-x;
+padding-left:10px;
+width:505px;
+float:left;
+color:#000000;
+}
+.membersli a{
+color:#000000;
+}
+.membersli1{
+background-image:url("activity_02.gif"/*tpa=http://www.sddyy.cn/images/01/activity_02.gif*/);
+background-position:center;
+background-repeat:repeat-x;
+width:65px;
+list-style:none;
+float:left;
+color:#000000;
+}
+.membersli1 a{
+color:#000000;
+}
+#memul{
+	color:#000000;
+	font-weight:bolder;
+	font-size:15px;
+	line-height:24px;
+	list-style-type:none;
+	vertical-align:bottom;
+	padding-right:20px; 
+	padding-top:20px;
+	padding-left:15px;
+	margin:0px;
+}
+#memul a{
+	color:#000000;
+	text-decoration: none;
+}
+.thumbnail1{
+    padding:10px 0.2px 1px 3px;
+	float: left;
+	margin-right: 30px;
+}
+	
+/*startshow css*/
+.thumbnail2{
+    padding:3px 0.2px 1px 3px;
+	float: left;
+	margin-right: 2px;
+	margin-left:4px;
+}
+
+
+/*instruction css*/
+* {
+	margin:0;
+	padding:0;
+	word-break:break-all;
+	z-index: 2;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+ul, li { list-style:none; }
+table { border-collapse:collapse; }
+
+/* iFocus style */
+#ifocus { width:615px; height:348px; background:#F8F8F8; background-image:url("instruction_3.jpg"/*tpa=http://www.sddyy.cn/images/01/instruction_3.jpg*/); background-position:center; background-repeat:no-repeat; }
+	#ifocus_pic { display:inline; position:relative; float:right; width:440px; height:325px; overflow:hidden; margin:13px 35px 10px 2px; }
+		#ifocus_piclist { position:absolute; }
+		#ifocus_piclist li { width:440px; height:325px; overflow:hidden; }
+		#ifocus_piclist img { width:440px; height:325px; }
+	#ifocus_btn { display:inline; float:left; width:91px; margin:20px 10px 0 30px; }
+		#ifocus_btn li { width:91px; height:57px; cursor:pointer; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); margin-bottom:5px; }
+		#ifocus_btn img { width:75px; height:45px; margin:7px 11px 0px 0px; }
+		#ifocus_btn .current { background: url("ifocus_btn_bg.gif"/*tpa=http://www.sddyy.cn/images/ifocus_btn_bg.gif*/) no-repeat; opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+	#ifocus_opdiv { position:absolute; left:0; bottom:0; width:440px; height:35px; background:#000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); }
+	#ifocus_tx { position:absolute; left:8px; bottom:8px; color:#FFF; }
+		#ifocus_tx .normal { display:none; }
+		
+/*幻灯片测试保留*/
+/*#ifocus1 { width:432px; height:255px;margin:0px; padding:0px;}
+#ifocus_pic1 { display:inline; position:relative; float:right; width:400px; height:228px; overflow:hidden; margin:15px 21px 15px 8px; }
+	#ifocus_piclist1 { position:absolute; margin:0px; padding:0px; }
+	#ifocus_piclist1 img { width:400px; height:228px; margin:0px; padding:0px; border:0px;}
+	#ifocus_btn1 li { width:9px; float:left; font-size:18px; font-weight:bolder;}
+	#ifocus_btn1 .current { color:#FDFCFA;  opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+	#ifocus_btn1 .normal { color:#B8C075;  opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+.ifocus_opdiv1 { position:absolute; left:0; bottom:0; width:100x; height:28px;  margin-left:350px; float:right; }
+#ifocus_tx1 {  left:8px;color:#990000; }
+#ifocus_tx1 .normal { display:none; }
+.homebj{background-image:url(../images/01/home_01.jpg);background-position:center; background-repeat:no-repeat; height:255px;}	*/	
+		
+/*幻灯片测试*/
+#ifocus1 { width:285px; height:327px;margin:0px; padding:0px;}
+#ifocus_pic1 { display:inline; position:relative; float:right; width:266px; height:303px; overflow:hidden; margin:14px 12px 5px 5px; }
+	#ifocus_piclist1 {
+	position:absolute;
+	margin:0px;
+	padding:0px;
+	height: 1450px;
+}
+
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+}
+</style>
+	#ifocus_piclist1 img { width:266px; height:303px; margin:0px; padding:0px; border:0px;}
+	#ifocus_btn1 li { width:9px; float:left; font-size:18px; font-weight:bolder;}
+	#ifocus_btn1 .current { color:#FDFCFA;  opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+	#ifocus_btn1 .normal { color:#B8C075;  opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+.ifocus_opdiv1 { position:absolute; left:0; bottom:0; width:100x; height:28px;  margin-left:210px; float:right; }
+#ifocus_tx1 {  left:8px;color:#990000; }
+#ifocus_tx1 .normal { display:none; }
+.homebj{background-image:url("home_bj1.gif"/*tpa=http://www.sddyy.cn/images/01/home_bj1.gif*/);background-position:center; background-repeat:no-repeat; height:327px;}
+
+
+/*new edit*/
+.tbactivity{
+background-image:url("activity_02.gif"/*tpa=http://www.sddyy.cn/images/01/activity_02.gif*/);
+background-position:center;
+background-repeat:repeat-x;
+}
+.p1{ text-align:left
+	}
